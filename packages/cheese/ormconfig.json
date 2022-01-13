@@ -1,0 +1,7 @@
+{
+   "type": "mongodb",
+   "database": "hamburger",
+   "useNewUrlParser": true,
+   "synchronize": true,
+   "logging": true
+}
