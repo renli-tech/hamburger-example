@@ -2,7 +2,7 @@ import "expo-dev-client";
 import React from "react";
 import { NativeBaseProvider } from "native-base";
 import RootNavigator from "./navigators/RootNavigator";
-import { theme as AppTheme } from "@hamburger/recipe";
+import { theme as AppTheme } from "@hamburger-example/recipe";
 import { extendTheme } from "native-base";
 import { enableScreens } from "react-native-screens";
 enableScreens();

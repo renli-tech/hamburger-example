@@ -1,6 +1,6 @@
 {
    "type": "mongodb",
-   "database": "hamburger",
+   "database": "hamburger-example",
    "useNewUrlParser": true,
    "synchronize": true,
    "logging": true

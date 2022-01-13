@@ -1,9 +1,9 @@
 {
-  "name": "@hamburger/bun",
+  "name": "@hamburger-example/bun",
   "description": "Web built with React",
   "version": "0.0.0",
   "sideEffects": false,
-  "repository": "git://github.com/renli-tech/hamburger.git",
+  "repository": "git://github.com/renli-tech/hamburger-example.git",
   "author": "opeabidemi <opeabidemi@gmail.com>",
   "license": "MIT",
   "files": [
@@ -13,9 +13,9 @@
   "dependencies": {
     "@apollo/client": "3.4.17",
     "@craco/craco": "6.4.0",
-    "@hamburger/ketchup": "0.0.0",
-    "@hamburger/recipe": "0.0.0",
-    "@hamburger/lettuce": "0.0.0",
+    "@hamburger-example/ketchup": "0.0.0",
+    "@hamburger-example/recipe": "0.0.0",
+    "@hamburger-example/lettuce": "0.0.0",
     "@testing-library/user-event": "13.5.0",
     "@types/jest": "27.0.2",
     "@types/node": "16.11.7",

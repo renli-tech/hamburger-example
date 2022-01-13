@@ -12,7 +12,7 @@ import fs from "fs-extra";
 
 const pkg = require("./package.json");
 
-const libraryName = "@hamburger/recipe";
+const libraryName = "@hamburger-example/recipe";
 
 const tsconfigOverride = {
   compilerOptions: {

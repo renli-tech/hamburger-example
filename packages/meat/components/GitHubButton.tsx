@@ -12,7 +12,9 @@ export const GitHubButton = () => {
       px='3'
       my='2'
       rounded='md'
-      onPress={() => Linking.openURL("https://github.com/renli-tech/hamburger")}
+      onPress={() =>
+        Linking.openURL("https://github.com/renli-tech/hamburger-example")
+      }
     >
       <Text mr='2' color='white'>
         Github

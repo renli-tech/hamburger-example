@@ -10,9 +10,9 @@ export const Home: React.FC<unknown> = () => {
       <HStack>
         <GitHubButton />
       </HStack>
-      <Heading size='2xl'>Hamburger Boilerplate App</Heading>
+      <Heading size='2xl'>hamburger-example Boilerplate App</Heading>
       <Heading size='sm' paddingY='2'>
-        This App lives in the @hamburger/meat package
+        This App lives in the @hamburger-example/meat package
       </Heading>
       <Text>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, vel quos

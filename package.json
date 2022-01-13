@@ -1,6 +1,6 @@
 {
-  "name": "hamburger",
-  "repository": "git://github.com/renli-tech/hamburger.git",
+  "name": "hamburger-example",
+  "repository": "git://github.com/renli-tech/hamburger-example.git",
   "private": true,
   "author": "opeabidemi <opeabidemi@gmail.com>",
   "workspaces": {
