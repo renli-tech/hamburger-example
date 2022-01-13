@@ -1,0 +1,32 @@
+type Product @extends @key(fields: "id") {
+  id: ID! @external
+  reviews: [Review!]!
+}
+
+type User @extends @key(fields: "id") {
+  id: ID! @external
+  reviews: [Review!]!
+}
+
+type Review @key(fields: "id") {
+  id: ID!
+  reviewContent: String!
+  dateAdded: DateTime!
+  user: User
+  product: Product
+}
+
+"""
+The javascript `Date` as string. Type represents date and time as the ISO Date string.
+"""
+scalar DateTime
+
+type Query {
+  _entities(representations: [_Any!]!): [_Entity]!
+  _service: _Service!
+  reviews: [Review!]!
+}
+
+type Mutation {
+  reviewProduct(productId: String!, userId: String!, reviewContent: String!): Review!
+}

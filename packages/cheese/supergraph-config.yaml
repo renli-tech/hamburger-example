@@ -1,10 +1,14 @@
-# USER POST
+# USER PRODUCT REVIEW
 subgraphs:
   user:
     routing_url: http://localhost:4001/user
     schema:
       file: src/subgraphs/user.graphql
-  post:
-    routing_url: http://localhost:4001/post
+  product:
+    routing_url: http://localhost:4001/product
     schema:
-      file: src/subgraphs/post.graphql
+      file: src/subgraphs/product.graphql
+  review:
+    routing_url: http://localhost:4002/review
+    schema:
+      file: src/subgraphs/review.graphql

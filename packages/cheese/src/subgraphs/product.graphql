@@ -1,7 +1,8 @@
-type User @key(fields: "id") {
+type Product @key(fields: "id") {
   id: ID!
-  username: String!
-  dateJoined: DateTime!
+  name: String!
+  price: Float!
+  dateAdded: DateTime!
 }
 
 """
@@ -12,9 +13,9 @@ scalar DateTime
 type Query {
   _entities(representations: [_Any!]!): [_Entity]!
   _service: _Service!
-  users: [User!]!
+  products: [Product!]!
 }
 
 type Mutation {
-  addUser(username: String!): User!
+  addProduct(price: Float!, name: String!): Product!
 }
