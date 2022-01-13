@@ -1,22 +1,25 @@
-import { Directive, ObjectType, Field, ID } from "type-graphql";
-import { BaseEntity, Column, Entity, ObjectIdColumn } from "typeorm";
-
-export type Role = "ADMIN" | "USER";
+import { Directive, Field, ObjectType, ID } from "type-graphql";
+import {
+  BaseEntity,
+  Column,
+  CreateDateColumn,
+  Entity,
+  ObjectIdColumn,
+} from "typeorm";
 
 @Entity()
 @Directive(`@key(fields: "id")`)
 @ObjectType()
-class User extends BaseEntity {
-  @Field(() => ID)
+export default class User extends BaseEntity {
   @ObjectIdColumn()
+  @Field(() => ID)
   id: string;
 
   @Field()
   @Column()
   username: string;
 
-  @Column()
-  role: Role;
+  @Field()
+  @CreateDateColumn()
+  dateJoined: Date;
 }
-
-export default User;
